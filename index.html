@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>
+            Climate change policy icons
+        </title>
+
+        <style>
+            .row{
+                width:1200px;
+                margin:10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: rgb(235, 233, 225);">
+        
+
+        <!--
+        <h1>
+            This is the main heading!
+        </h1>
+
+        <h2>
+            This is a subheading!
+        </h2>
+
+        <p>
+            Here's a sentance!<br>Here's another sentance...
+        </p>
+        
+
+        <p>Here's another sentance...<br>that continues on the next line!</p>
+
+        <src="img/city.jpg" alt="Melbourne skyline" width="500"> -->
+
+        <div class="row">   
+            <div class="image-container"><img id="carbon_emissions1" src ="img/original/carbon_emissions.png" onmouseover="this.src='img/alternate/carbon_emissions.png';" onmouseout="this.src='img/original/carbon_emissions.png';" alt="Cooling tower" width="300"/></div>
+            <div class="image-container"><img id="conservation1" src="img/original/conservation.png" onmouseover="this.src='img/alternate/conservation.png';" onmouseout="this.src='img/original/conservation.png';" alt="Tree with padlock" width="300"/></div>
+            <div class="image-container"><img id="electric_vehicle1" src="img/original/electric_vehicle.png" onmouseover="this.src='img/alternate/electric_vehicle.png';" onmouseout="this.src='img/original/electric_vehicle.png';" alt="Electric car" width="300"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="energy_efficient_buildings1" src ="img/original/Energy_efficient_buildings.png" onmouseover="this.src='img/alternate/energy_efficient_buildings.png';" onmouseout="this.src='img/original/energy_efficient_buildings.png';" alt="Energy efficient buildings" width="300"/></div>
+            <div class="image-container"><img id="oceans1" src ="img/original/oceans.png" onmouseover="this.src='img/alternate/oceans.png';" onmouseout="this.src='img/original/oceans.png';" alt="Yacht sailing on ocean" width="300"/></div>
+            <div class="image-container"><img id="pollution1" src ="img/original/pollution.png" onmouseover="this.src='img/alternate/pollution.png';" onmouseout="this.src='img/original/pollution.png';" alt="Crushed water bottle" width="300"/></div>
+        </div>
+        
+        <div class="row">
+            <div class="image-container"><img id="public_transport1" src ="img/original/public_transport.png" onmouseover="this.src='img/alternate/public_transport.png';" onmouseout="this.src='img/original/public_transport.png';" alt="Melbourne tram" width="300"/></div>
+            <div class="image-container"><img id="renewable_energy1" src ="img/original/renewable_energy.png" onmouseover="this.src='img/alternate/renewable_energy.png';" onmouseout="this.src='img/original/renewable_energy.png';" alt="Windmills on rolling green hills" width="300"/></div>
+            <div class="image-container"><img id="science1" src ="img/original/science.png" onmouseover="this.src='img/alternate/science.png';" onmouseout="this.src='img/original/science.png';" alt="Plant growing out of beaker" width="300"/></div>  
+        </div>
+
+        <script>
+            /* sound files */
+            var sound1 = new buzz.sound("sound/carbon_emissions.mp3");
+            var sound2 = new buzz.sound("sound/conservation.mp3");
+            var sound3 = new buzz.sound("sound/electric_vehicle.mp3");
+            var sound4 = new buzz.sound("sound/energy_efficient_buildings.mp3");
+            var sound5 = new buzz.sound("sound/oceans.mp3");
+            var sound6 = new buzz.sound("sound/pollution.mp3");
+            var sound7 = new buzz.sound("sound/public_transport.mp3");
+            var sound8 = new buzz.sound("sound/renewable_energy.mp3");
+            var sound9 = new buzz.sound("sound/science.mp3");
+
+            /* sound function for when user hovers over image */
+            window.onload = function() {
+                document.getElementById("carbon_emissions1").addEventListener("mouseover", function () {sound1.play();});
+                document.getElementById("conservation1").addEventListener("mouseover", function () {sound2.play();});
+                document.getElementById("electric_vehicle1").addEventListener("mouseover", function () {sound3.play();});
+                document.getElementById("energy_efficient_buildings1").addEventListener("mouseover", function () {sound4.play();});
+                document.getElementById("oceans1").addEventListener("mouseover", function () {sound5.play();});
+                document.getElementById("pollution1").addEventListener("mouseover", function () {sound6.play();});
+                document.getElementById("public_transport1").addEventListener("mouseover", function () {sound7.play();}); 
+                document.getElementById("renewable_energy1").addEventListener("mouseover", function () {sound8.play();});
+                document.getElementById("science1").addEventListener("mouseover", function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+</html>
